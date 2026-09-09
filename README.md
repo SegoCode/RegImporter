@@ -23,7 +23,10 @@ Interactive PowerShell console that imports Windows registry values from JSON pr
 
 ## Features
 
-Console menu to navigate nested JSON profiles, apply or restore registry keys of all common types, and keep a backup of the previous value.
+- Keyboard console menu to apply or restore keys
+- Nested JSON profiles (categories)
+- Creates missing values and backs up the previous state
+- String, ExpandString, Binary, DWord, MultiString, QWord
 
 
 ## Quick Start & Information
