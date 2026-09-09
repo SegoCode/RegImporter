@@ -7,9 +7,9 @@
 <p align="center">
   <a href="#about">About</a> •
   <a href="#features">Features</a> •
-  <a href="#quick-start--information">Quick Start & Information</a> •
-  <a href="#download">Download</a> 
+  <a href="#quick-start--information">Quick Start & Information</a>
 </p>
+
 
 ## About
 [![Top language](https://img.shields.io/github/languages/top/SegoCode/RegImporter?style=flat-square)](https://github.com/SegoCode/RegImporter)
@@ -23,42 +23,40 @@ Interactive PowerShell console that imports Windows registry values from JSON pr
 
 ## Features
 
-- Menu: categories (`[>]`) first, then Apply all and keys (`[X]` applied, `[ ]` not). Missing keys are created on apply, same as a wrong value.
+Console menu to navigate nested JSON profiles, apply or restore registry keys of all common types, and keep a backup of the previous value.
 
-- Categories: a JSON object with `items` is a folder. Enter opens it. Apply all applies only the current subtree, not siblings. Esc goes back (quit at root).
-
-- Backup and restore: the first change writes `reg_bak\<description>_bak.reg` next to the script. Enter on `[X]` restores that backup. If the value did not exist, restore deletes it. Later applies do not overwrite the first backup.
-
-- Types: `String`, `ExpandString` (stored unexpanded), `Binary` (`"0A 0B FF"` or `[10,11,255]`), `DWord`, `MultiString`, `QWord`.
 
 ## Quick Start & Information
 
-The script lives in `code/`. Copy a file from `code/profiles/` next to it as `profile.json`, or pass a path relative to the script.
+Run from GitHub (no install):
+
+```shell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/SegoCode/RegImporter/main/code/regImporter.ps1 | iex"
+```
+
+Or from a clone, in `code/`:
 
 ```shell
 cd code
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Reg-importer.ps1
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Reg-importer.ps1 profiles\privacy_profile.json
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\regImporter.ps1
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\regImporter.ps1 profiles\privacy_profile.json
 ```
 
 Up/Down or J/K, Enter, Esc.
 
 > [!NOTE]  
-> HKLM rows need admin. HKCU does not.
+> HKLM rows need admin. HKCU does not. Use a visible console (ReadKey).
 
 > [!TIP]
 > Add new profiles under `code/profiles/` and open a pull request.
 
 ### Available Parameters
 
-Default `profile.json` next to the script:
-```shell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Reg-importer.ps1
-```
+Position 0: profile path relative to the script, or absolute. Omitted loads `profile.json` next to the script, or the repo `privacy_profile.json` when run via `irm | iex`.
 
-Path relative to the script directory:
 ```shell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Reg-importer.ps1 profiles\privacy_profile.json
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\regImporter.ps1
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\regImporter.ps1 profiles\privacy_profile.json
 ```
 
 `profile.json` is a JSON array of keys and optional categories (`items`):
@@ -96,9 +94,6 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Reg-importer.ps1 profi
 | `MultiString` | `["one","two"]` |
 | `QWord` | `"99"` |
 
-## Download
-
-https://github.com/SegoCode/RegImporter
 
 ---
 <p align="center"><a href="https://github.com/SegoCode/RegImporter/graphs/contributors">
