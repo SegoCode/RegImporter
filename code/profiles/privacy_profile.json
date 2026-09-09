@@ -1,0 +1,65 @@
+[
+   {
+      "description":"Disable data collection",
+      "path":"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\DataCollection",
+      "name":"AllowTelemetry",
+      "type":"DWord",
+      "value":"0"
+   },
+   {
+      "description":"Set privacy policy not accepted",
+      "path":"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Personalization\\Settings",
+      "name":"AcceptedPrivacyPolicy",
+      "type":"DWord",
+      "value":"0"
+   },
+   {
+      "description":"Block advertising ID for experiencess across apps",
+      "path":"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo",
+      "name":"Enabled",
+      "type":"DWord",
+      "value":"0"
+   },
+   {
+      "description":"Disable scan for contact informations",
+      "path":"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore",
+      "name":"HarvestContacts",
+      "type":"DWord",
+      "value":"0"
+   },
+   {
+      "description":"Disable location tracking",
+      "path":"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore",
+      "name":"Status",
+      "type":"DWord",
+      "value":"0"
+   },
+   {
+      "description":"Disable Windows feedback",
+      "path":"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Siuf\\Rules",
+      "name":"NumberOfSIUFInPeriod",
+      "type":"DWord",
+      "value":"0"
+   },
+   {
+      "description":"Disable error reporting",
+      "path":"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error Reporting",
+      "name":"Disable",
+      "type":"DWord",
+      "value":"1"
+   },
+   {
+      "description":"Disable application suggestions",
+      "path":"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager",
+      "name":"ContentDeliveryAllowed",
+      "type":"DWord",
+      "value":"0"
+   },
+   {
+      "description":"Disable Location Tracking",
+      "path":"HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Siuf\\Rules",
+      "name":"NumberOfSIUFInPeriod",
+      "type":"DWord",
+      "value":"0"
+   }
+]
