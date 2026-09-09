@@ -31,7 +31,7 @@ Interactive PowerShell console that imports Windows registry values from JSON pr
 
 ## Quick Start & Information
 
-Run from GitHub (no install):
+Run from GitHub:
 
 ```shell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/SegoCode/RegImporter/main/code/regImporter.ps1 | iex"
@@ -44,14 +44,6 @@ cd code
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\regImporter.ps1
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\regImporter.ps1 profiles\privacy_profile.json
 ```
-
-Up/Down or J/K, Enter, Esc.
-
-> [!NOTE]  
-> HKLM rows need admin. HKCU does not. Use a visible console (ReadKey).
-
-> [!TIP]
-> Add new profiles under `code/profiles/` and open a pull request.
 
 ### Available Parameters
 
@@ -87,16 +79,6 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\regImporter.ps1 profil
   }
 ]
 ```
-
-| `type` | `value` |
-|---|---|
-| `String` | `"hello"` |
-| `ExpandString` | `"%TEMP%\\x"` (stored unexpanded) |
-| `Binary` | `"0A 0B FF"` or `[10,11,255]` |
-| `DWord` | `"42"` |
-| `MultiString` | `["one","two"]` |
-| `QWord` | `"99"` |
-
 
 ---
 <p align="center"><a href="https://github.com/SegoCode/RegImporter/graphs/contributors">
