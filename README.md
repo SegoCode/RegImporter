@@ -1,6 +1,6 @@
 # RegImporter
 
-<h3 align="center"><img src="media/demoJsonConsole.png"></h3>
+<h3 align="center"><img src="media/logo3.png"></h3>
 
 <p align="center">
   <a href="#about">About</a> •
