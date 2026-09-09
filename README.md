@@ -1,4 +1,4 @@
-# {reponame}
+# RegImporter
 
 <h3 align="center"><img src="media/demoJsonConsole.png"></h3>
 
@@ -10,11 +10,11 @@
 </p>
 
 ## About
-[![Top language](https://img.shields.io/github/languages/top/{username}/{reponame}?style=flat-square)](https://github.com/{username}/{reponame})
-[![Repository size](https://img.shields.io/github/repo-size/{username}/{reponame}?style=flat-square&label=repo%20size)](https://github.com/{username}/{reponame})
-[![Commit activity per year](https://img.shields.io/github/commit-activity/y/{username}/{reponame}?style=flat-square&label=commits)](https://github.com/{username}/{reponame}/graphs/commit-activity)
-[![GitHub downloads](https://img.shields.io/github/downloads/{username}/{reponame}/total?style=flat-square&label=downloads)](https://github.com/{username}/{reponame}/releases)
-[![Licencia: PolyForm Noncommercial + GNU AGPL-3.0](https://img.shields.io/badge/License-PolyForm%20Noncommercial%20%2B%20GNU%20AGPL--3.0-blue?style=flat-square)](https://github.com/{username}/{reponame}/blob/main/LICENSE)
+[![Top language](https://img.shields.io/github/languages/top/SegoCode/RegImporter?style=flat-square)](https://github.com/SegoCode/RegImporter)
+[![Repository size](https://img.shields.io/github/repo-size/SegoCode/RegImporter?style=flat-square&label=repo%20size)](https://github.com/SegoCode/RegImporter)
+[![Commit activity per year](https://img.shields.io/github/commit-activity/y/SegoCode/RegImporter?style=flat-square&label=commits)](https://github.com/SegoCode/RegImporter/graphs/commit-activity)
+[![GitHub downloads](https://img.shields.io/github/downloads/SegoCode/RegImporter/total?style=flat-square&label=downloads)](https://github.com/SegoCode/RegImporter/releases)
+[![Licencia: PolyForm Noncommercial + GNU AGPL-3.0](https://img.shields.io/badge/License-PolyForm%20Noncommercial%20%2B%20GNU%20AGPL--3.0-blue?style=flat-square)](https://github.com/SegoCode/RegImporter/blob/main/LICENSE)
 [![Bitcoin BTC](https://img.shields.io/badge/buy_me_a_coffee-BTC-F7931A?style=flat-square&logo=bitcoin&logoColor=white)](https://github.com/SegoCode/SegoCode/discussions/2)
 
 
@@ -97,9 +97,9 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Reg-importer.ps1 profi
 
 ## Download
 
-https://github.com/{username}/{reponame}
+https://github.com/SegoCode/RegImporter
 
 ---
-<p align="center"><a href="https://github.com/{username}/{reponame}/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo={username}/{reponame}" />
+<p align="center"><a href="https://github.com/SegoCode/RegImporter/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SegoCode/RegImporter" />
 </a></p>
